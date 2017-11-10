@@ -4,94 +4,67 @@
 
 body {
   color: #212121;
-  background-color: #ffffff;
   font-family: "Roboto", "Open Sans", sans-serif;
   font-size: 100%;
 }
 
 .container {
-  margin: 0 auto;
+  background-color: #f0f0f0;
   width: 100%;
+  min-width: 279px;
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 /* heading text */
 h1 {
-  font-size: 2.5em;
+  font-size: 1.25em;
   font-weight: 700;
   line-height: 1.6;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: .875em;
   font-weight: 500;
   line-height: normal;
 }
 
 h3 {
-  font-size: 1.8em;
+  font-size: .875em;
   font-weight: bold;
   line-height: 1.5;
 }
 
 h4 {
   color: #757575;
-  font-size: 1.5em;
+  font-size: .875em;
   font-weight: 500;
   line-height: 2;
 }
 
 h5 {
-  font-size: 1.2em;
+  font-size: .75em;
   font-weight: 500;
   line-height: 1.5;
 }
 
 h6 {
   color: #757575;
-  font-size: 1.2em;
+  font-size: .75em;
   font-weight: 500;
   line-height: 1.2;
 }
-
-/* status bar postioners
-.status-bar {
-  background-color: #0f5500;
-  position: fixed;
-}
-
-.wifi-icon {
-  display: inline-block;
-  float: right;
-}
-
-.signal-icon {
-  display: inline-block;
-  float: right;
-}
-
-.battery-icon {
-  display: inline-block;
-  float: right;
-}
-
-.status-time {
-  display: inline-block;
-  float: right;
-}
-*/
 
 /* app contents below this line */
 
 /* Toolbar */
 nav {
   background-color: #1faa00;
-  box-shadow: 0 .3em .8em #b1b1b1;
-  margin: 0 auto;
-  padding: 2em;
+  box-shadow: 0 .3em .8em rgba(0, 0, 0, .25);
+  overflow: hidden;
+  padding: 1.1em 4%;
   position: fixed;
   width: 100%;
   z-index: 2;
@@ -99,14 +72,18 @@ nav {
 
 .back-arrow {
   display: inline-block;
-  width: 1.5em;
+  float: left;
+  margin: .4em 0 0 2%;
+  width: 1em;
 }
 
 .page-title {
   display: inline-block;
+  overflow: hidden;
   padding: 0 1em;
-  margin-left: 2em;
-  width: 70%;
+  margin-left: 5%;
+  white-space: nowrap;
+  width: 75%;
 }
 
 .page-title h1 {
@@ -116,48 +93,35 @@ nav {
 .dropdown {
   display: inline-block;
   float: right;
-  padding-top: .5em;
-  width: 1.5em;
+  margin-top: .4em;
+  width: 1.1em;
 }
 
 /* Sheet contents */
 
 /* sections - position and decoration*/
 .current-route{
-  background-color: #f5f5f5;
-  box-shadow: 0 .3em .8em #b1b1b1;
+  background-color: #f8f8f8;
+  box-shadow: 0 .3em .8em rgba(0, 0, 0, .25);
   display: block;
-  padding-top: 8em;
+  padding-top: 3.9em;
 }
 
-.alternate-routes {
-  background-color: #f5f5f5;
-  box-shadow: 0 .3em .8em #b1b1b1;
-  display: block;
-  margin-top: 1em;
-}
-
-.other-routes {
-  background-color: #f5f5f5;
-  box-shadow: 0 .3em .8em #b1b1b1;
-  display: block;
-  margin-top: 1em;
-}
-
-.out-of-service {
-  background-color: #f5f5f5;
-  box-shadow: 0 .3em .8em #b1b1b1;
+.route-section {
+  background-color: #f8f8f8;
+  box-shadow: 0 .3em .8em rgba(0, 0, 0, .25);
   display: block;
   margin-top: 1em;
 }
 
 .section-title {
-  padding: 1em 2em 1em 2em;
+  padding: 1em 5% 1em 5%;
 }
 
 /* bus info */
 .bus-line {
-  border-bottom: 1px solid #bababa;
+  border-bottom: 1px solid rgba(0, 0, 0, .25);
+  padding: 2.5% 0 2.5% 0;
   width: 100%;
 }
 
@@ -167,8 +131,7 @@ nav {
 
 .bus-time {
   display: inline-block;
-  padding: 1.5em;
-  margin-left: 1em;
+  margin-left: 5%;
   width: 15%;
 }
 
@@ -179,7 +142,7 @@ nav {
 /* center content */
 .content {
   display: inline-block;
-  margin: 4% 5% 3%;
+  margin: 0 3%;
   width: 60%;
 }
 
@@ -189,10 +152,10 @@ nav {
 
 .bus-icon {
   display: inline-block;
-  margin-right: .5em;
+  margin-right: .25em;
   position: relative;
-  top: .4em;
-  width: 2em;
+  top: .2em;
+  width: 1em;
   z-index: 1;
 }
 
@@ -200,8 +163,8 @@ nav {
   background-color: #ff8f35;
   border-radius: 5px;
   display: inline-block;
-  margin-right: 1.5em;
-  padding: .2em .5em;
+  margin-right: .75em;
+  padding: .1em .25em;
 }
 
 .bus-rectangle h3 {
@@ -212,7 +175,7 @@ nav {
   border: 1px solid #212121;
   border-radius: .5em;
   display: inline-block;
-  padding: 0 .5em;
+  padding: 0 .25em;
 }
 
 .alternate-routes .bus-rectangle {
@@ -230,20 +193,30 @@ nav {
 /*end of center content */
 
 .checkbox {
-  display: inline-block;
-  position: relative;
-  top: -.75em;
-  width: 2em;
+  float: right;
+  margin: 4% 5.5% 0 0%;
+  max-width: 13%;
   z-index: 1;
 }
 
-/*@media screen and (min-width: 991px) {
+.checkbox img {
+  width: 1.2em;
+}
+
+@media screen and (min-width: 39em) {
   body {
-    background-image: url("images/googlemap.jpg");
-    overflow: hidden;
+    background-image: url("/images/GoogleMap.jpg");
+    background-attachment: fixed;
   }
 
   .container {
-    width: 30%
+    max-width: 30%;
+    min-width: 279px;
   }
-}*/
+
+  nav {
+    padding: 1.1em 1%;
+    max-width: 30%;
+    min-width: 279px;
+  }
+}
