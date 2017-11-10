@@ -205,7 +205,7 @@ nav {
 
 @media screen and (min-width: 39em) {
   body {
-    background-image: url("/images/GoogleMap.jpg");
+    background-image: url("/images/map.jpg");
     background-attachment: fixed;
   }
 
