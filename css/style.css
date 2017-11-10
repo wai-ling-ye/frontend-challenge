@@ -1,0 +1,249 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  color: #212121;
+  background-color: #ffffff;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-size: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+/* heading text */
+h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 500;
+  line-height: normal;
+}
+
+h3 {
+  font-size: 1.8em;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+h4 {
+  color: #757575;
+  font-size: 1.5em;
+  font-weight: 500;
+  line-height: 2;
+}
+
+h5 {
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+h6 {
+  color: #757575;
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* status bar postioners
+.status-bar {
+  background-color: #0f5500;
+  position: fixed;
+}
+
+.wifi-icon {
+  display: inline-block;
+  float: right;
+}
+
+.signal-icon {
+  display: inline-block;
+  float: right;
+}
+
+.battery-icon {
+  display: inline-block;
+  float: right;
+}
+
+.status-time {
+  display: inline-block;
+  float: right;
+}
+*/
+
+/* app contents below this line */
+
+/* Toolbar */
+nav {
+  background-color: #1faa00;
+  box-shadow: 0 .3em .8em #b1b1b1;
+  margin: 0 auto;
+  padding: 2em;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
+}
+
+.back-arrow {
+  display: inline-block;
+  width: 1.5em;
+}
+
+.page-title {
+  display: inline-block;
+  padding: 0 1em;
+  margin-left: 2em;
+  width: 70%;
+}
+
+.page-title h1 {
+  color: #ffffff;
+}
+
+.dropdown {
+  display: inline-block;
+  float: right;
+  padding-top: .5em;
+  width: 1.5em;
+}
+
+/* Sheet contents */
+
+/* sections - position and decoration*/
+.current-route{
+  background-color: #f5f5f5;
+  box-shadow: 0 .3em .8em #b1b1b1;
+  display: block;
+  padding-top: 8em;
+}
+
+.alternate-routes {
+  background-color: #f5f5f5;
+  box-shadow: 0 .3em .8em #b1b1b1;
+  display: block;
+  margin-top: 1em;
+}
+
+.other-routes {
+  background-color: #f5f5f5;
+  box-shadow: 0 .3em .8em #b1b1b1;
+  display: block;
+  margin-top: 1em;
+}
+
+.out-of-service {
+  background-color: #f5f5f5;
+  box-shadow: 0 .3em .8em #b1b1b1;
+  display: block;
+  margin-top: 1em;
+}
+
+.section-title {
+  padding: 1em 2em 1em 2em;
+}
+
+/* bus info */
+.bus-line {
+  border-bottom: 1px solid #bababa;
+  width: 100%;
+}
+
+.bus-line:hover {
+  background-color: #bababa;
+}
+
+.bus-time {
+  display: inline-block;
+  padding: 1.5em;
+  margin-left: 1em;
+  width: 15%;
+}
+
+#resumes {
+  color: #757575;
+}
+
+/* center content */
+.content {
+  display: inline-block;
+  margin: 4% 5% 3%;
+  width: 60%;
+}
+
+.busline-visual {
+  display: inline-block;
+}
+
+.bus-icon {
+  display: inline-block;
+  margin-right: .5em;
+  position: relative;
+  top: .4em;
+  width: 2em;
+  z-index: 1;
+}
+
+.bus-rectangle {
+  background-color: #ff8f35;
+  border-radius: 5px;
+  display: inline-block;
+  margin-right: 1.5em;
+  padding: .2em .5em;
+}
+
+.bus-rectangle h3 {
+  line-height: normal;
+}
+
+.direction {
+  border: 1px solid #212121;
+  border-radius: .5em;
+  display: inline-block;
+  padding: 0 .5em;
+}
+
+.alternate-routes .bus-rectangle {
+  background-color: #ab47bc;
+}
+
+.other-routes .bus-rectangle,
+.out-of-service .bus-rectangle {
+  background-color: #6e94a5;
+}
+
+.bus-rectangle h3 {
+  color: #ffffff;
+}
+/*end of center content */
+
+.checkbox {
+  display: inline-block;
+  position: relative;
+  top: -.75em;
+  width: 2em;
+  z-index: 1;
+}
+
+/*@media screen and (min-width: 991px) {
+  body {
+    background-image: url("images/googlemap.jpg");
+    overflow: hidden;
+  }
+
+  .container {
+    width: 30%
+  }
+}*/

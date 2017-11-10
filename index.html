@@ -2,11 +2,253 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <title>Transfers</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-    <title></title>
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
   </head>
   <body>
+    <section class="container">
+      <!-- <div class="status-bar" aria-hidden="true">
+        <div class="wifi-icon">
+          <img src="images/wifi.svg" alt="wifi">
+        </div>
+        <div class="signal-icon">
+          <img src="images/signal.svg" alt="signal">
+        </div>
+        <div class="battery-icon">
+          <img src="images/battery.svg" alt="battery">
+        </div>
+        <div class="status-time">
+          <h3>7:52</h3>
+        </div>
+      </div> -->
+      <nav>
+        <div class="back-arrow" aria-role="button">
+          <img src="images/back-arrow.svg" alt="back arrow" aria-hidden="true"></i>
+        </div>
+        <div class="page-title" aria-role="banner">
+          <h1>Washington Av / State Av</h1>
+        </div>
+        <div class="dropdown" aria-role="button">
+          <img src="images/dropdown.svg" alt="more" aria-hidden="true">
+        </div>
+      </nav>
 
+      <section class="current-route">
+        <div class="section-title">
+          <h2>Current Route</h2>
+        </div>
+        <div class="bus-line">
+          <div class="bus-time">
+            <h3>7:54</h3>
+            <h5>2 min</h5>
+            <h6>22 min</h6>
+          </div>
+          <div class="content">
+            <div class="busline-visual">
+              <div class="bus-icon">
+                <img src="images/bus-icon.svg" alt="bus">
+              </div>
+              <div class="bus-rectangle">
+                <h3>60</h3>
+              </div>
+              <div class="direction">
+                <h3>Eastbound</h3>
+              </div>
+            </div>
+            <h4>Randolph / Harbor Dr</h4>
+          </div>
+      </section>
+
+      <section class="alternate-routes">
+        <div class="section-title">
+          <h2>Alternate Routes</h2>
+        </div>
+        <div class="bus-line">
+          <div class="bus-time">
+            <h3>7:55</h3>
+            <h5>3 min</h5>
+            <h6>13 min</h6>
+          </div>
+          <div class="content">
+            <div class="busline-visual">
+              <div class="bus-icon">
+                <img src="images/bus-icon.svg" alt="bus">
+              </div>
+              <div class="bus-rectangle">
+                <h3>124</h3>
+              </div>
+              <div class="direction">
+                <h3>Eastbound</h3>
+              </div>
+            </div>
+            <h4>Navy Pier</h4>
+          </div>
+          <div class="checkbox" role=checkbox aria-checked="false">
+            <img src="images/checkbox-empty.svg" alt="unchecked box" aria-hidden="true">
+          </div>
+        </div>
+
+        <div class="bus-line">
+          <div class="bus-time">
+            <h3>8:05</h3>
+            <h5>10 min</h5>
+            <h6>20 min</h6>
+          </div>
+          <div class="content">
+            <div class="busline-visual">
+              <div class="bus-icon">
+                <img src="images/bus-icon.svg" alt="bus">
+              </div>
+              <div class="bus-rectangle">
+                <h3>124</h3>
+              </div>
+              <div class="direction">
+                <h3>Southbound</h3>
+              </div>
+            </div>
+            <h4>Navy Pier</h4>
+          </div>
+          <div class="checkbox" role=checkbox aria-checked="false">
+            <img src="images/checkbox-empty.svg" alt="unchecked box" aria-hidden="true">
+          </div>
+        </div>
+      </section>
+
+      <section class="other-routes">
+        <div class="section-title">
+          <h2>Other Routes</h2>
+        </div>
+        <div class="bus-line">
+          <div class="bus-time">
+            <h3>7:58</h3>
+            <h5>6 min</h5>
+            <h6>32 min</h6>
+          </div>
+          <div class="content">
+            <div class="busline-visual">
+              <div class="bus-icon">
+                <img src="images/bus-icon.svg" alt="bus">
+              </div>
+              <div class="bus-rectangle">
+                <h3>151</h3>
+              </div>
+              <div class="direction">
+                <h3>Northbound</h3>
+              </div>
+            </div>
+            <h4>Devon Av / Clark Av</h4>
+          </div>
+          <div class="checkbox" role=checkbox aria-checked="false">
+            <img src="images/checkbox-empty.svg" alt="unchecked box" aria-hidden="true">
+          </div>
+        </div>
+        <div class="bus-line">
+          <div class="bus-time">
+            <h3>8:07</h3>
+            <h5>15 min</h5>
+            <h6>30 min</h6>
+          </div>
+          <div class="content">
+            <div class="busline-visual">
+              <div class="bus-icon">
+                <img src="images/bus-icon.svg" alt="bus">
+              </div>
+              <div class="bus-rectangle">
+                <h3>J14</h3>
+              </div>
+              <div class="direction">
+                <h3>Southbound</h3>
+              </div>
+            </div>
+            <h4>103rd Av / Stony Island</h4>
+          </div>
+          <div class="checkbox" role=checkbox aria-checked="false">
+            <img src="images/checkbox-empty.svg" alt="unchecked box" aria-hidden="true">
+          </div>
+        </div>
+
+        <div class="bus-line">
+          <div class="bus-time">
+            <h3>8:13</h3>
+            <h5>21 min</h5>
+            <h6>N/A</h6>
+          </div>
+          <div class="content">
+            <div class="busline-visual">
+              <div class="bus-icon">
+                <img src="images/bus-icon.svg" alt="bus">
+              </div>
+              <div class="bus-rectangle">
+                <h3>6x</h3>
+              </div>
+              <div class="direction">
+                <h3>Rerouted</h3>
+              </div>
+            </div>
+            <h4>Jackson Park Express</h4>
+          </div>
+          <div class="checkbox" role=checkbox aria-checked="false">
+            <img src="images/checkbox-empty.svg" alt="unchecked box" aria-hidden="true">
+          </div>
+        </div>
+      </section>
+
+      <section class="out-of-service">
+        <div class="section-title">
+          <h2>Out of Service</h2>
+        </div>
+        <div class="bus-line">
+          <div class="bus-time" id="resumes">
+            <h3>12:10 am</h3>
+          </div>
+          <div class="content">
+            <div class="busline-visual">
+              <div class="bus-icon">
+                <img src="images/bus-icon.svg" alt="bus">
+              </div>
+              <div class="bus-rectangle">
+                <h3>4</h3>
+              </div>
+            </div>
+            <h4>Cottage Grove</h4>
+          </div>
+        </div>
+        <div class="bus-line">
+          <div class="bus-time" id="resumes">
+            <h3>12:10 am</h3>
+          </div>
+          <div class="content">
+            <div class="busline-visual">
+              <div class="bus-icon">
+                <img src="images/bus-icon.svg" alt="bus">
+              </div>
+              <div class="bus-rectangle">
+                <h3>20</h3>
+              </div>
+            </div>
+            <h4>Madison</h4>
+          </div>
+        </div>
+        <div class="bus-line">
+          <div class="bus-time" id="resumes">
+            <h3>6:00 am</h3>
+          </div>
+          <div class="content">
+            <div class="busline-visual">
+              <div class="bus-icon">
+                <img src="images/bus-icon.svg" alt="bus">
+              </div>
+              <div class="bus-rectangle">
+                <h3>157</h3>
+              </div>
+            </div>
+            <h4>Streeterville Av / Taylor Av</h4>
+          </div>
+        </div>
+      </section>
+
+    </section>
   </body>
 </html>
