@@ -107,7 +107,9 @@ nav {
   padding-top: 3.9em;
 }
 
-.route-section {
+.alternate-routes,
+.other-routes,
+.out-of-service {
   background-color: #f8f8f8;
   box-shadow: 0 .3em .8em rgba(0, 0, 0, .25);
   display: block;
@@ -205,7 +207,7 @@ nav {
 
 @media screen and (min-width: 39em) {
   body {
-    background-image: url("/images/map.JPG");
+    background-image: url("https://wai-ling-ye.github.io/frontend-challenge/images/map.jpg");
     background-attachment: fixed;
   }
 
