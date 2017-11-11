@@ -205,7 +205,7 @@ nav {
 
 @media screen and (min-width: 39em) {
   body {
-    background-image: url("/images/map.JPG");
+    background-image: url("https://wai-ling-ye.github.io/frontend-challenge/images/map.jpg");
     background-attachment: fixed;
   }
 
