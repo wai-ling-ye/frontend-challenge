@@ -11,7 +11,7 @@ body {
 .container {
   background-color: #f0f0f0;
   width: 100%;
-  min-width: 279px;
+  min-width: 22.25em;
 }
 
 img {
@@ -67,6 +67,7 @@ nav {
   padding: 1.1em 4%;
   position: fixed;
   width: 100%;
+  min-width: 22.25em;
   z-index: 2;
 }
 
@@ -131,6 +132,7 @@ nav {
   background-color: #bababa;
 }
 
+/* left content of bus info */
 .bus-time {
   display: inline-block;
   margin-left: 5%;
@@ -139,9 +141,10 @@ nav {
 
 #resumes {
   color: #757575;
+  float: left;
 }
 
-/* center content */
+/* center content of bus info*/
 .content {
   display: inline-block;
   margin: 0 3%;
@@ -192,17 +195,18 @@ nav {
 .bus-rectangle h3 {
   color: #ffffff;
 }
-/*end of center content */
+/*end of center content of bus info */
 
+/* right content of bus info */
 .checkbox {
   float: right;
-  margin: 4% 5.5% 0 0%;
+  margin: 1em 5.5% 0 0%;
   max-width: 13%;
   z-index: 1;
 }
 
 .checkbox img {
-  width: 1.2em;
+  width: 1.3em;
 }
 
 @media screen and (min-width: 39em) {
@@ -213,12 +217,23 @@ nav {
 
   .container {
     max-width: 30%;
-    min-width: 279px;
+    min-width: 22.25em;
   }
 
   nav {
     padding: 1.1em 1%;
     max-width: 30%;
-    min-width: 279px;
+    min-width: 22.25em;
+  }
+}
+
+@media screen and (min-height: 60.75em) {
+  .container {
+    height: 100%;
+    position: fixed;
+  }
+
+  .out-of-service {
+    height: 100%;
   }
 }
