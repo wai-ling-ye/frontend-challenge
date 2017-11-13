@@ -7,22 +7,19 @@
     <link rel="stylesheet" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-
   <body>
-    <main class="container">
-      <header>
-        <nav>
-          <div class="back-arrow" aria-role="button">
-            <img src="images/back-arrow.svg" alt="back arrow"></i>
-          </div>
-          <div class="page-title">
-            <h1>Washington Av / State Av</h1>
-          </div>
-          <div class="dropdown" aria-role="button">
-            <img src="images/dropdown.svg" alt="more">
-          </div>
-        </nav>
-      </header>
+    <section class="container">
+      <nav>
+        <div class="back-arrow" aria-role="button">
+          <img src="images/back-arrow.svg" alt="back arrow" aria-hidden="true"></i>
+        </div>
+        <div class="page-title" aria-role="banner">
+          <h1>Washington Av / State Av</h1>
+        </div>
+        <div class="dropdown" aria-role="button">
+          <img src="images/dropdown.svg" alt="more" aria-hidden="true">
+        </div>
+      </nav>
 
       <section class="current-route">
         <div class="section-title">
@@ -74,8 +71,8 @@
             </div>
             <h4>Navy Pier</h4>
           </div>
-          <div class="checkbox" role=checkbox aria-checked="true">
-            <img src="images/checkbox-marked.svg" alt="checked box" aria-hidden="true">
+          <div class="checkbox" role=checkbox aria-checked="false">
+            <img src="images/checkbox-empty.svg" alt="unchecked box" aria-hidden="true">
           </div>
         </div>
 
@@ -238,6 +235,6 @@
         </div>
       </section>
 
-    </main>
+    </section>
   </body>
 </html>
